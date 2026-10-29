@@ -64,7 +64,12 @@
     if (!r.ok) {
       if (r.status === 401) throw new Error("Der GitHub-Schlüssel ist abgelaufen oder ungültig. Bitte Jaron Bescheid geben.");
       if (r.status === 403 && /rate limit/i.test(daten.message || "")) throw new Error("GitHub bremst gerade (zu viele Anfragen). Bitte in ein paar Minuten nochmal.");
-      if (r.status === 403 && /not accessible/i.test(daten.message || "")) throw new Error("Dem GitHub-Schlüssel fehlt ein Recht: Er braucht für das Repo website-marleha „Contents: Read and write“.");
+      if (r.status === 403 && /not accessible/i.test(daten.message || "")) {
+        // GitHub nennt im Kopf der Antwort, welches Recht für diesen Schritt nötig wäre
+        const noetig = r.headers.get("x-accepted-github-permissions") || "unbekannt";
+        throw new Error("Dem GitHub-Schlüssel fehlt ein Recht: Er braucht für das Repo website-marleha „Contents: Read and write“. " +
+          "(Technisch: " + (opts.method || "GET") + " " + pfad.split("?")[0] + " – nötig: " + noetig + ")");
+      }
       if (r.status === 422 && /fast forward/i.test(daten.message || "")) throw new Error("Die Website wurde in der Zwischenzeit woanders geändert. Bitte die Seite neu laden.");
       throw new Error("GitHub meldet: " + (daten.message || r.status));
     }
