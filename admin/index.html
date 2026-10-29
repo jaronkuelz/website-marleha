@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Marleha – Website bearbeiten</title>
+<style>
+  @font-face { font-family: "Imperial Script"; src: url("../fonts/imperial-script.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Manrope"; font-weight: 200 800; src: url("../fonts/manrope.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "EB Garamond"; src: url("../fonts/eb-garamond-400.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "EB Garamond"; font-style: italic; src: url("../fonts/eb-garamond-400-italic.woff2") format("woff2"); font-display: swap; }
+
+  :root {
+    --cremeweiss: #FAF5EC; --champagner: #F0DFC4; --champagner-tief: #E8D4B4; --kaschmir: #E5DED5;
+    --gold: #D2A863; --gold-dunkel: #8E6524; --espresso: #24201C; --leise: #5E5650;
+    --linie: rgba(36, 32, 28, 0.16); --rot: #A8322A; --gruen: #2E6B45;
+  }
+  * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
+  /* Bewusst große, klare Grundschrift: das Panel soll entspannt bedienbar sein */
+  body { margin: 0; font: 17px/1.55 "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif; background: var(--cremeweiss); color: var(--espresso); }
+  h1, h2, h3 { margin: 0; line-height: 1.25; }
+  button, input, textarea, select { font: inherit; color: inherit; }
+  a { color: var(--gold-dunkel); }
+  img { display: block; max-width: 100%; }
+
+  /* Anmeldung */
+  .mitte { min-height: 100vh; display: grid; place-items: center; padding: 20px; }
+  .karte { background: #fff; border: 1px solid var(--linie); border-radius: 16px; padding: 32px; width: 100%; max-width: 440px; }
+  .karte .zeichen { font: 3rem/1.2 "Imperial Script", cursive; color: var(--gold-dunkel); text-align: center; }
+  .karte p.lead { color: var(--leise); margin: 6px 0 24px; text-align: center; }
+
+  .feld { margin-bottom: 18px; }
+  label, .label { display: block; font-weight: 700; font-size: 0.95rem; margin-bottom: 6px; }
+  .hilfe { color: var(--leise); font-size: 0.88rem; margin-top: 6px; }
+  input[type=text], input[type=password], input[type=date], textarea, select {
+    width: 100%; padding: 11px 13px; background: #fff; border: 2px solid var(--linie); border-radius: 10px; font-size: 1rem;
+  }
+  textarea { resize: vertical; min-height: 5rem; }
+  textarea.lang { min-height: 16rem; font-family: "EB Garamond", Georgia, serif; font-size: 1.12rem; line-height: 1.7; }
+  input:focus, textarea:focus, select:focus, button:focus-visible { outline: 3px solid rgba(210,168,99,0.5); border-color: var(--gold); }
+  .haken { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; font-size: 0.95rem; cursor: pointer; }
+  .haken input { width: 20px; height: 20px; accent-color: var(--gold-dunkel); }
+
+  .knopf { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 10px 18px; min-height: 44px; border-radius: 999px; border: 2px solid var(--linie); background: #fff; font-weight: 700; font-size: 0.95rem; cursor: pointer; text-decoration: none; color: var(--espresso); }
+  .knopf:hover:not(:disabled) { background: var(--champagner); }
+  .knopf.haupt { background: var(--gold-dunkel); border-color: var(--gold-dunkel); color: #fff; }
+  .knopf.haupt:hover:not(:disabled) { background: #74511a; }
+  .knopf.klein { padding: 6px 12px; min-height: 36px; font-size: 0.85rem; }
+  .knopf.gefahr { color: var(--rot); }
+  .knopf.gefahr:hover:not(:disabled) { background: #fbe9e7; }
+  .knopf.voll { width: 100%; }
+  .knopf:disabled { opacity: 0.5; cursor: default; }
+
+  .meldung { padding: 12px 16px; border-radius: 10px; margin: 0 0 16px; }
+  .meldung.fehler { background: #fbe9e7; color: var(--rot); border: 1px solid #f0c4be; }
+  .meldung.ok { background: #e7f2ea; color: var(--gruen); border: 1px solid #c2dfcb; }
+  .meldung.info { background: #fff; border: 1px solid var(--linie); }
+
+  /* Kopf */
+  .kopf { position: sticky; top: 0; z-index: 30; background: var(--espresso); color: var(--cremeweiss); display: flex; align-items: center; gap: 10px 14px; padding: 10px 20px; flex-wrap: wrap; }
+  .kopf .zeichen { font: 2.1rem/1 "Imperial Script", cursive; color: var(--gold); margin-right: auto; padding-top: 4px; }
+  .kopf .status { font-size: 0.9rem; color: rgba(250,245,236,0.7); }
+  .kopf .status.offen { color: #FFD79A; font-weight: 700; }
+  .kopf .knopf:not(.haupt) { background: transparent; border-color: rgba(250,245,236,0.35); color: var(--cremeweiss); }
+  .kopf .knopf:not(.haupt):hover { background: rgba(250,245,236,0.12); }
+  .kopf .knopf.haupt { background: var(--gold); border-color: var(--gold); color: var(--espresso); }
+
+  .bereiche { display: flex; gap: 6px; padding: 14px 20px 0; max-width: 1100px; margin: 0 auto; flex-wrap: wrap; }
+  .bereiche button { padding: 10px 18px; border: 0; border-bottom: 3px solid transparent; background: none; font-weight: 700; color: var(--leise); cursor: pointer; }
+  .bereiche button[aria-selected="true"] { color: var(--espresso); border-bottom-color: var(--gold); }
+  main { max-width: 1100px; margin: 0 auto; padding: 20px 20px 120px; }
+  .einleitung { color: var(--leise); margin: 0 0 18px; max-width: 760px; }
+
+  /* Gruppen (Galerien / Sammlungen) */
+  .gruppen { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+  .gruppen button { padding: 8px 14px; border-radius: 999px; border: 2px solid var(--linie); background: #fff; cursor: pointer; font-weight: 600; font-size: 0.92rem; }
+  .gruppen button[aria-pressed="true"] { background: var(--champagner); border-color: var(--gold); }
+  .gruppen button .zahl { color: var(--leise); font-weight: 400; margin-left: 4px; }
+  .gruppen button.verborgen { border-style: dashed; color: var(--leise); }
+  .gruppen button.neu { border-style: dashed; color: var(--gold-dunkel); }
+
+  .kasten { background: #fff; border: 1px solid var(--linie); border-radius: 14px; padding: 20px; margin-bottom: 18px; }
+  .kasten h2 { font-size: 1.1rem; margin-bottom: 14px; }
+  .zeile { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .zeile.ende { justify-content: flex-end; }
+  .raster2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 18px; }
+
+  .werkzeug { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 6px 0 18px; }
+  .werkzeug .fortschritt { color: var(--leise); font-size: 0.92rem; }
+
+  /* Einträge (Bilder / Texte) */
+  .eintraege { display: grid; gap: 14px; }
+  .eintrag { display: grid; grid-template-columns: 180px 1fr; gap: 18px; background: #fff; border: 1px solid var(--linie); border-radius: 14px; padding: 16px; }
+  .eintrag.verborgen { background: repeating-linear-gradient(135deg, #fff 0 10px, #faf7f2 10px 20px); }
+  .eintrag .vorschau { background: var(--kaschmir); border-radius: 8px; display: grid; place-items: center; min-height: 140px; overflow: hidden; }
+  .eintrag .vorschau img { max-height: 220px; width: auto; object-fit: contain; }
+  .eintrag .vorschau .leer { padding: 12px; text-align: center; color: var(--leise); font-size: 0.85rem; }
+  .eintrag .knoepfe { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+  .eintrag.text { grid-template-columns: 1fr; }
+  .marke { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 0.78rem; font-weight: 700; background: var(--kaschmir); color: var(--leise); }
+  .leer-hinweis { padding: 28px; text-align: center; color: var(--leise); border: 2px dashed var(--linie); border-radius: 14px; }
+
+  /* Texteditor */
+  .leiste { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 8px; }
+  .leiste button { padding: 6px 12px; border: 1px solid var(--linie); border-radius: 8px; background: var(--cremeweiss); cursor: pointer; font-size: 0.9rem; }
+  .leiste button:hover { background: var(--champagner); }
+  .lesevorschau { font-family: "EB Garamond", Georgia, serif; font-size: 1.12rem; line-height: 1.75; padding: 18px 22px; border: 2px dashed var(--linie); border-radius: 10px; background: var(--cremeweiss); }
+  .lesevorschau p { margin: 0 0 0.9em; }
+  .lesevorschau h4 { font-size: 1.3rem; font-weight: 400; margin: 1em 0 0.4em; }
+  .lesevorschau blockquote { margin: 0 0 0.9em; padding-left: 16px; border-left: 2px solid var(--gold); font-style: italic; }
+
+  .startbild { max-width: 360px; background: var(--kaschmir); border-radius: 10px; padding: 10px; margin-bottom: 12px; }
+  .startbild img { max-height: 480px; width: auto; margin: 0 auto; object-fit: contain; }
+
+  @media (max-width: 700px) {
+    .eintrag { grid-template-columns: 1fr; }
+    .raster2 { grid-template-columns: 1fr; }
+    .kopf .zeichen { width: 100%; }
+    /* Kopf scrollt mit, Speichern bleibt als Leiste unten erreichbar */
+    .kopf { position: static; }
+    .kopf .knopf.haupt { position: fixed; z-index: 40; left: 12px; right: 12px; bottom: 12px; box-shadow: 0 10px 30px rgba(36,32,28,0.25); }
+    .kopf .knopf.haupt:disabled { display: none; }
+  }
+</style>
+</head>
+<body>
+<div id="app"></div>
+<script src="../textformat.js"></script>
+<script src="speicher.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

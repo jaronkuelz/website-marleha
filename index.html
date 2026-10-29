@@ -53,7 +53,7 @@
         <p class="etikett">Malerei · Fotografie · Objekte · Texte</p>
       </div>
       <figure class="portraet">
-        <img src="bilder/marleha.webp" alt="Marleha mit einer Katze im Arm" width="900" height="1200" fetchpriority="high">
+        <img id="startbild" src="bilder/marleha.webp" alt="Marleha mit einer Katze im Arm" width="900" height="1200" fetchpriority="high">
       </figure>
     </div>
   </section>
@@ -67,11 +67,13 @@
 
     <div class="feld" id="kunstwerke" role="tabpanel" aria-labelledby="tab-kunstwerke">
       <div class="reiter" role="tablist" aria-label="Galerien"></div>
-      <div class="galerie-kopf"><h3 class="schwung tief"></h3></div>
+      <div class="galerie-kopf"><h3 class="schwung tief"></h3><p class="beschreibung"></p></div>
       <ul class="werke"></ul>
     </div>
 
     <div class="feld" id="texte" role="tabpanel" aria-labelledby="tab-texte" hidden>
+      <div class="reiter" role="tablist" aria-label="Sammlungen"></div>
+      <div class="galerie-kopf"><h3 class="schwung tief"></h3><p class="beschreibung"></p></div>
       <ul class="texte"></ul>
     </div>
   </section>
@@ -81,10 +83,7 @@
   <section class="ueber" id="ueber">
     <div class="ueber-innen">
       <h2 class="schwung tief">Über mich</h2>
-      <div>
-        <p>Platzhalter – hier stellt sich Marleha später selbst vor: wer sie ist, womit sie arbeitet und was sie antreibt.</p>
-        <p>Zwei, drei kurze Absätze reichen.</p>
-      </div>
+      <div class="ueber-text"></div>
     </div>
   </section>
 
@@ -122,6 +121,7 @@
   <div class="gross-inhalt"></div>
 </dialog>
 
+<script src="textformat.js"></script>
 <script src="skript.js"></script>
 </body>
 </html>

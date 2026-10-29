@@ -110,6 +110,9 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .reiter button[aria-selected="true"] { background: var(--champagner); border-color: var(--gold); color: var(--espresso); }
 .galerie-kopf { text-align: center; margin-bottom: 28px; }
 .galerie-kopf h3 { font-size: clamp(3rem, 6vw, 4.5rem); line-height: 1.1; }
+.galerie-kopf .beschreibung { max-width: 560px; margin: 4px auto 0; color: var(--leise); }
+.galerie-kopf .beschreibung:empty { display: none; }
+.werke .leer, .texte .leer { grid-column: 1 / -1; text-align: center; color: var(--leise); }
 
 /* Werke nebeneinander, kleine Rahmen */
 .werke { display: grid; align-items: start; grid-template-columns: repeat(auto-fill, minmax(min(220px, 42vw), 1fr)); gap: clamp(28px, 4vw, 48px) clamp(16px, 3vw, 40px); list-style: none; }
@@ -142,6 +145,8 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .ueber h2 { font-size: clamp(4rem, 9vw, 7rem); line-height: 1; }
 .ueber p { color: var(--leise); max-width: 460px; }
 .ueber p + p { margin-top: 1em; }
+.ueber-text h4 { font: 300 1.5rem/1.2 var(--anzeige); margin: 1em 0 0.3em; }
+.ueber-text blockquote { margin: 1em 0; padding-left: 16px; border-left: 1px solid var(--gold); font-style: italic; color: var(--leise); }
 
 /* ---------- Kontakt ---------- */
 .kontakt { background: var(--kaschmir); padding: clamp(64px, 9vw, 112px) var(--rand); text-align: center; }
@@ -176,6 +181,8 @@ dialog[open] { animation: erscheinen .5s cubic-bezier(.2,.7,.2,1); }
 .text-gross h3 { font: 300 clamp(2.2rem, 5vw, 3.2rem)/1.1 var(--anzeige); margin: 12px 0 28px; }
 .text-gross p { font-size: 1.15rem; line-height: 1.8; }
 .text-gross p + p { margin-top: 1.1em; }
+.text-gross h4 { font: 300 1.7rem/1.2 var(--anzeige); margin: 1.4em 0 0.5em; }
+.text-gross blockquote { margin: 1.2em 0; padding-left: 20px; border-left: 1px solid var(--gold); font: italic 300 1.45rem/1.5 var(--anzeige); color: var(--gold-text); }
 .text-gross .ende { font-size: 2.6rem; text-align: right; margin-top: 28px; }
 
 @media (max-width: 760px) {
