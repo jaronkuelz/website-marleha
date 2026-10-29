@@ -1,0 +1,9 @@
+{
+  "hinweis": "Verschlüsselter Zugang für das Adminpanel – ohne Passwort nutzlos.",
+  "salz": "Pvcs5Kzt2bGOXSH7t/0B7g==",
+  "iterationen": 600000,
+  "token": {
+    "iv": "pWS5ArZcxkQ6vasw",
+    "daten": "l6IBac8fLGLmDCaZ2tEwU9ScqPbYCYIb41LbiGm1ROsiBjuXzu412B0buDgs1G/lVyw23aM9QbmEF7HnJESnv6FqNwAqktocfxaH6vBJHtQlR4mW0CTXs3Po3aivQ5AOEFNia4+E27dUyELkpg=="
+  }
+}
