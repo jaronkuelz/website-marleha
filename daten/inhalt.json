@@ -6,6 +6,7 @@
     "alt": "Marleha mit einer Katze im Arm"
   },
   "ueber": "Platzhalter – hier stellt sich Marleha später selbst vor: wer sie ist, womit sie arbeitet und was sie antreibt.\n\nZwei, drei kurze Absätze reichen.",
+  "musik": "Platzhalter – hier erzählt Marleha später kurz von ihrer Musik, zum Beispiel vom neuesten Song.\n\nAlle Lieder gibt es auf Spotify.",
   "galerien": [
     {
       "id": "zwischenraeume",
@@ -46,7 +47,8 @@
         ],
         "format": "3 / 4"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": true
     },
     {
       "id": "zwischenraeume-was-bleibt",
@@ -61,7 +63,8 @@
         ],
         "format": "4 / 3"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": false
     },
     {
       "id": "zwischenraeume-zwei-stimmen",
@@ -76,7 +79,8 @@
         ],
         "format": "1 / 1"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": false
     },
     {
       "id": "zwischenraeume-leiser-rand",
@@ -91,7 +95,8 @@
         ],
         "format": "2 / 3"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": false
     },
     {
       "id": "zwischenraeume-schwebe",
@@ -106,7 +111,8 @@
         ],
         "format": "5 / 4"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": false
     },
     {
       "id": "lichtnotizen-fenster-vier-uhr",
@@ -121,7 +127,8 @@
         ],
         "format": "3 / 4"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": false
     },
     {
       "id": "lichtnotizen-nachhall",
@@ -136,7 +143,8 @@
         ],
         "format": "3 / 4"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": true
     },
     {
       "id": "lichtnotizen-kante-des-tages",
@@ -151,7 +159,8 @@
         ],
         "format": "4 / 3"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": false
     },
     {
       "id": "lichtnotizen-stille-wasser",
@@ -166,7 +175,8 @@
         ],
         "format": "1 / 1"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": false
     },
     {
       "id": "erdstuecke-schale-fuer-nichts",
@@ -181,7 +191,8 @@
         ],
         "format": "2 / 3"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": false
     },
     {
       "id": "erdstuecke-gefaess-ii",
@@ -196,7 +207,8 @@
         ],
         "format": "5 / 4"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": false
     },
     {
       "id": "erdstuecke-halt",
@@ -211,7 +223,8 @@
         ],
         "format": "3 / 4"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": true
     },
     {
       "id": "linien-ein-strich-ein-atem",
@@ -226,7 +239,8 @@
         ],
         "format": "3 / 4"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": false
     },
     {
       "id": "linien-hand-wartend",
@@ -241,7 +255,8 @@
         ],
         "format": "4 / 3"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": false
     },
     {
       "id": "linien-skizze-fuer-spaeter",
@@ -256,7 +271,8 @@
         ],
         "format": "1 / 1"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": false
     },
     {
       "id": "linien-umriss",
@@ -271,7 +287,8 @@
         ],
         "format": "2 / 3"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": false
     },
     {
       "id": "einzel-ohne-titel",
@@ -286,7 +303,8 @@
         ],
         "format": "4 / 3"
       },
-      "sichtbar": true
+      "sichtbar": true,
+      "diashow": false
     }
   ],
   "sammlungen": [

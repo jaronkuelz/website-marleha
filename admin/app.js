@@ -161,7 +161,7 @@
     meldungEl = h("div");
     hauptEl = h("main");
     const reiter = [
-      ["werke", "Kunstwerke"], ["texte", "Texte"], ["start", "Startbild & Über mich"], ["konto", "Passwort"],
+      ["werke", "Kunstwerke"], ["texte", "Texte"], ["start", "Startseite, Musik & Über mich"], ["konto", "Passwort"],
     ].map(([id, name]) => h("button", { type: "button", role: "tab", "aria-selected": String(bereich === id),
       text: name, onclick() { bereich = id; meldungText = null; oberflaeche(); } }));
     app.replaceChildren(
@@ -275,7 +275,7 @@
               const titel = dateien[i].name.replace(/\.[^.]+$/, "").replace(/[_-]+/g, " ").trim() || "Ohne Titel";
               const id = neueId(titel);
               const bild = await bildVorbereiten(dateien[i], "bilder/werke/" + id + ".jpg");
-              inhalt.werke.push({ id, titel, text: "", galerie: zielGruppe, bild, sichtbar: true });
+              inhalt.werke.push({ id, titel, text: "", galerie: zielGruppe, bild, sichtbar: true, diashow: false });
               geaendert();
             } catch (err) { fehler.push(err.message); }
           }
@@ -375,6 +375,7 @@
           h("textarea", { value: w.text, maxlength: 3000, rows: 2, oninput(e) { w.text = e.target.value; geaendert(); } })),
         h("div", { class: "zeile" },
           h("label", { class: "haken" }, h("input", { type: "checkbox", checked: w.sichtbar, onchange(e) { w.sichtbar = e.target.checked; geaendert(); zeichne(); } }), "Auf der Website zeigen"),
+          h("label", { class: "haken" }, h("input", { type: "checkbox", checked: !!w.diashow, onchange(e) { w.diashow = e.target.checked; geaendert(); } }), "Oben in der Diashow"),
           !w.sichtbar && h("span", { class: "marke", text: "Verborgen" }),
           h("span", { style: "flex:1" }),
           h("button", { class: "knopf klein", type: "button", text: "↑", title: "Nach oben", "aria-label": "Nach oben", disabled: i === 0,
@@ -457,8 +458,8 @@
     const sb = inhalt.startbild;
     hauptEl.append(
       h("div", { class: "kasten" },
-        h("h2", { text: "Startbild" }),
-        h("p", { class: "hilfe", style: "margin:-6px 0 14px", text: "Das Foto oben auf der Startseite. Es wird immer vollständig gezeigt, nichts wird abgeschnitten." }),
+        h("h2", { text: "Foto von dir (erstes Bild der Diashow)" }),
+        h("p", { class: "hilfe", style: "margin:-6px 0 14px", text: "Oben auf der Startseite läuft eine langsame Diashow: zuerst dieses Foto, danach alle Werke mit dem Häkchen „Oben in der Diashow“. Bilder werden immer vollständig gezeigt." }),
         h("div", { class: "startbild" }, h("img", { src: bildAdresse(sb), alt: "" })),
         h("div", { class: "zeile" },
           h("button", { class: "knopf", type: "button", text: "Anderes Foto wählen", async onclick(e) {
@@ -471,6 +472,9 @@
           } })),
         h("div", { class: "feld", style: "margin-top:16px" }, h("label", { text: "Bildbeschreibung (für Blinde und Suchmaschinen)" }),
           h("input", { type: "text", value: sb.alt || "", maxlength: 300, oninput(e) { sb.alt = e.target.value; geaendert(); } }))),
+      h("div", { class: "kasten" },
+        h("h2", { text: "Musik" }),
+        editor(inhalt.musik || "", (v) => { inhalt.musik = v; geaendert(); })),
       h("div", { class: "kasten" },
         h("h2", { text: "Über mich" }),
         editor(inhalt.ueber, (v) => { inhalt.ueber = v; geaendert(); })));

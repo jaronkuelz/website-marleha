@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Marleha – Kunst &amp; Texte</title>
-  <meta name="description" content="Marleha – Malerei, Fotografie, Objekte und Texte.">
+  <meta name="description" content="Marleha – Malerei, Fotografie, Objekte, Texte und Musik.">
   <link rel="preload" href="fonts/imperial-script.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="stil.css">
 </head>
@@ -34,28 +34,36 @@
   </svg>
 </template>
 
+<!-- Menü: Pillen oben rechts (auf dem Handy hinter „Menü“) -->
 <header class="kopf">
-  <a class="zeichen schwung tief" href="#">Marleha</a>
-  <nav aria-label="Hauptmenü">
-    <a href="#kunstwerke">Kunstwerke</a>
-    <a href="#texte">Texte</a>
-    <a href="#ueber">Über mich</a>
-    <a href="#kontakt">Kontakt</a>
+  <a class="zeichen schwung tief" href="#start" aria-label="Marleha – zum Anfang">Marleha</a>
+  <button type="button" class="menue-knopf knopf" aria-expanded="false" aria-controls="menue">Menü</button>
+  <nav id="menue" aria-label="Hauptmenü">
+    <a class="knopf" href="#kunstwerke">Kunstwerke</a>
+    <a class="knopf" href="#texte">Texte</a>
+    <a class="knopf" href="#musik">Musik</a>
+    <a class="knopf" href="#ueber">Über mich</a>
+    <a class="knopf" href="#kontakt">Kontakt</a>
   </nav>
 </header>
 
 <main>
-  <section class="buehne" aria-label="Start">
+  <!-- Startbereich: langsame Diashow. Hinten weichgezeichnet bildschirmfüllend, vorne das Bild vollständig -->
+  <section class="buehne" id="start" aria-label="Start">
+    <div class="buehne-hinten" aria-hidden="true"></div>
     <div class="buehne-innen">
-      <div data-blume></div>
-      <div>
-        <h1 class="name schwung">Marleha</h1>
-        <p class="etikett">Malerei · Fotografie · Objekte · Texte</p>
+      <div class="buehne-text">
+        <h1 class="name schwung tief">Marleha</h1>
+        <p class="etikett">Malerei · Fotografie · Objekte · Texte · Musik</p>
       </div>
-      <figure class="portraet">
-        <img id="startbild" src="bilder/marleha.webp" alt="Marleha mit einer Katze im Arm" width="900" height="1200" fetchpriority="high">
+      <figure class="buehne-bild">
+        <div class="dias">
+          <img class="dia aktiv" src="bilder/marleha.webp" alt="Marleha mit einer Katze im Arm" width="900" height="1200" fetchpriority="high">
+        </div>
+        <figcaption class="etikett dia-titel"></figcaption>
       </figure>
     </div>
+    <a class="weiter" href="#kunstwerke" aria-label="Weiter nach unten"><span></span></a>
   </section>
 
   <section class="auswahl" aria-label="Kunstwerke und Texte">
@@ -78,16 +86,30 @@
     </div>
   </section>
 
-  <div class="ueberlappung"><div data-blume></div></div>
-
-  <section class="ueber" id="ueber">
-    <div class="ueber-innen">
-      <h2 class="schwung tief">Über mich</h2>
-      <div class="ueber-text"></div>
+  <section class="flaeche musik" id="musik">
+    <div data-blume></div>
+    <h2>Musik</h2>
+    <div class="musik-text"></div>
+    <div class="knoepfe">
+      <a class="knopf" href="https://open.spotify.com/artist/5KJrnfQfPEuLVxmmDdwpFJ" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9.5"/><path d="M7 9.5c3.5-1 7.5-.7 10.5 1M7.6 12.8c2.8-.8 6-.5 8.4.9M8.2 15.9c2.2-.6 4.5-.4 6.4.7"/></svg>
+        Auf Spotify hören
+      </a>
     </div>
   </section>
 
-  <section class="kontakt" id="kontakt">
+  <section class="flaeche ueber" id="ueber">
+    <div class="ueber-innen">
+      <div>
+        <h2>Über mich</h2>
+        <div class="ueber-text"></div>
+      </div>
+      <!-- Lose, leicht gedrehte Bilder – ohne Rahmen, immer vollständig -->
+      <div class="lose-bilder" aria-label="Einblicke"></div>
+    </div>
+  </section>
+
+  <section class="flaeche kontakt" id="kontakt">
     <h2>Kontakt</h2>
     <p>Am schnellsten erreichst du mich über Instagram.</p>
     <div class="knoepfe">

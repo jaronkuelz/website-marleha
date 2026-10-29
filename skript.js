@@ -135,20 +135,80 @@ function werkKarte(werk, gruppenName) {
   return li;
 }
 
+// Texte als offene Zeile: Datum · Titel · Lesen, darunter der Anfang
 function textKarte(text) {
-  const li = el("li", "text-karte");
+  const li = el("li", "text-zeile");
   const knopf = el("button");
   knopf.type = "button";
   knopf.append(
-    el("span", "etikett", datum(text.datum) + " · " + lesezeit(text.inhalt) + " Min."),
+    el("span", "datum", datum(text.datum)),
     el("h3", "", text.titel),
-    el("p", "", anriss(text.inhalt)),
-    el("span", "lesen", "Weiterlesen →")
+    el("span", "lesen", lesezeit(text.inhalt) + " Min. · Lesen →"),
+    el("p", "", anriss(text.inhalt))
   );
   knopf.addEventListener("click", () => zeigeText(text));
   li.append(knopf);
   return li;
 }
+
+// ---------- Diashow oben ----------
+// Erstes Bild: Marlehas Foto, danach die Werke, die im Adminpanel für die Diashow markiert sind.
+// Vorne steht jedes Bild vollständig, hinten liegt es weichgezeichnet und füllt den Bildschirm.
+function starteDiashow(c) {
+  const dias = [{ titel: "", bild: c.startbild, alt: c.startbild.alt }]
+    .concat(c.werke.filter((w) => w.diashow && (w.bild || w.platzhalter)));
+  const vorne = $(".dias");
+  const hinten = $(".buehne-hinten");
+  const titel = $(".dia-titel");
+  vorne.replaceChildren(...dias.map((d) => {
+    const e = bildFuer(d);
+    e.className = "dia";
+    e.loading = "eager";
+    if (d.alt) e.alt = d.alt;
+    return e;
+  }));
+  hinten.replaceChildren(...dias.map((d) => bildFuer(d)));
+  let i = 0;
+  function zeige(n) {
+    vorne.children[i].classList.remove("aktiv");
+    hinten.children[i].classList.remove("aktiv");
+    i = n;
+    vorne.children[i].classList.add("aktiv");
+    hinten.children[i].classList.add("aktiv");
+    titel.textContent = dias[i].titel;
+  }
+  zeige(0);
+  const ruhig = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (dias.length > 1 && !ruhig) setInterval(() => zeige((i + 1) % dias.length), 7000);
+}
+
+// ---------- Lose Bilder bei „Über mich“ (leicht gedreht, ohne Rahmen) ----------
+function baueLoseBilder(c) {
+  const auswahl = c.werke.filter((w) => w.bild).concat(c.werke.filter((w) => !w.bild && w.platzhalter)).slice(0, 3);
+  $(".lose-bilder").replaceChildren(...auswahl.map((w) => {
+    const knopf = el("button");
+    knopf.type = "button";
+    knopf.setAttribute("aria-label", w.titel + " ansehen");
+    const b = bildFuer(w);
+    b.style.width = "100%";
+    knopf.append(b);
+    knopf.addEventListener("click", () => zeigeWerk(w, ""));
+    return knopf;
+  }));
+}
+
+// ---------- Kopf: Name erscheint beim Scrollen, Menü auf dem Handy ----------
+const kopf = $(".kopf");
+const menueKnopf = $(".menue-knopf");
+window.addEventListener("scroll", () => kopf.classList.toggle("gescrollt", window.scrollY > window.innerHeight * 0.6), { passive: true });
+menueKnopf.addEventListener("click", () => {
+  const offen = kopf.classList.toggle("offen");
+  menueKnopf.setAttribute("aria-expanded", offen);
+});
+document.querySelectorAll("#menue a").forEach((a) => a.addEventListener("click", () => {
+  kopf.classList.remove("offen");
+  menueKnopf.setAttribute("aria-expanded", "false");
+}));
 
 // ---------- Umschalter Kunstwerke | Texte ----------
 function waehle(bereich) {
@@ -177,16 +237,10 @@ window.addEventListener("hashchange", folgeAdresse);
 fetch("daten/inhalt.json", { cache: "no-cache" })
   .then((r) => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then((c) => {
-
-    const sb = $("#startbild");
-    if (bildAdresse(c.startbild) !== sb.getAttribute("src")) {
-      sb.src = bildAdresse(c.startbild);
-      sb.width = c.startbild.breite;
-      sb.height = c.startbild.hoehe;
-    }
-    sb.alt = c.startbild.alt || "Marleha";
-
+    starteDiashow(c);
     $(".ueber-text").innerHTML = TextFormat.alsHtml(c.ueber);
+    $(".musik-text").innerHTML = TextFormat.alsHtml(c.musik || "");
+    baueLoseBilder(c);
 
     baueBereich({ panel: "#kunstwerke", liste: ".werke", feld: "galerie", gruppen: c.galerien, eintraege: c.werke,
       alleName: "Alle Werke", ohneName: "Einzelwerke", karte: werkKarte });
