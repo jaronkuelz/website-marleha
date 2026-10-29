@@ -64,6 +64,7 @@
     if (!r.ok) {
       if (r.status === 401) throw new Error("Der GitHub-Schlüssel ist abgelaufen oder ungültig. Bitte Jaron Bescheid geben.");
       if (r.status === 403 && /rate limit/i.test(daten.message || "")) throw new Error("GitHub bremst gerade (zu viele Anfragen). Bitte in ein paar Minuten nochmal.");
+      if (r.status === 403 && /not accessible/i.test(daten.message || "")) throw new Error("Dem GitHub-Schlüssel fehlt ein Recht: Er braucht für das Repo website-marleha „Contents: Read and write“.");
       if (r.status === 422 && /fast forward/i.test(daten.message || "")) throw new Error("Die Website wurde in der Zwischenzeit woanders geändert. Bitte die Seite neu laden.");
       throw new Error("GitHub meldet: " + (daten.message || r.status));
     }
@@ -82,13 +83,12 @@
     return text ? JSON.parse(text) : null;
   }
 
+  // Prüft nur, ob der Schlüssel das Repo sieht. Ob er schreiben darf, zeigt erst das Speichern
+  // (GitHub meldet bei "permissions" die Rechte des Kontos, nicht die des Schlüssels).
   async function pruefeToken(t) {
     token = t;
-    const repo = await gh("");
-    if (!repo.permissions || !repo.permissions.push) {
-      token = null;
-      throw new Error("Dieser GitHub-Schlüssel darf das Repo nicht ändern (Recht „Contents: Read and write“ fehlt).");
-    }
+    try { await gh(""); }
+    catch (e) { token = null; throw e; }
   }
 
   async function anmelden(passwort) {
