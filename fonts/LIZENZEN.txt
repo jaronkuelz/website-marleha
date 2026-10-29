@@ -1,0 +1,5 @@
+Alle Schriften stehen unter der SIL Open Font License 1.1 (https://openfontlicense.org)
+- Imperial Script – Copyright The Imperial Script Project Authors
+- Cormorant Garamond – Copyright The Cormorant Project Authors
+- EB Garamond – Copyright The EB Garamond Project Authors
+- Manrope – Copyright The Manrope Project Authors
