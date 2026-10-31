@@ -167,7 +167,7 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .ueber-text blockquote { margin: 1em 0; padding-left: 16px; border-left: 1px solid var(--gold); font-style: italic; }
 /* Schwebende Bilder: gerade, leicht überlappend, weicher Schatten, kleine runde Ecken – Bild bleibt vollständig */
 .lose-bilder { position: relative; min-height: clamp(380px, 46vw, 560px); }
-.lose-bilder > * { position: absolute; width: 46%; border-radius: 14px; overflow: hidden;
+.lose-bilder > * { position: absolute; width: 46%; border-radius: 28px; overflow: hidden;
   box-shadow: 0 30px 60px -30px rgba(36,32,28,0.28), 0 8px 24px -12px rgba(36,32,28,0.12);
   animation: schweben 7s ease-in-out infinite alternate; transition: scale .8s cubic-bezier(.2,.7,.2,1); }
 .lose-bilder > * > * { border-radius: inherit; }
