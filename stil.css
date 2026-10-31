@@ -154,20 +154,28 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .musik .musik-text p + p { margin-top: 1em; }
 
 /* ---------- Über mich ---------- */
-.ueber { background: var(--champagner-tief); text-align: left; }
+.ueber { background: var(--champagner-tief); text-align: left; padding-top: clamp(120px, 14vw, 190px); padding-bottom: clamp(120px, 14vw, 190px); }
+/* Weiche Wellen oben und unten: oben in der Farbe von „Musik“, unten in der von „Kontakt“ */
+.ueber::before, .ueber::after { content: ""; position: absolute; left: 0; right: 0; height: clamp(40px, 6vw, 80px); background-size: 100% 100%; pointer-events: none; }
+.ueber::before { top: 0; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 80' preserveAspectRatio='none'%3E%3Cpath fill='%23F0DFC4' d='M0 0H1440V34C1200 74 960 78 720 52S240 6 0 40Z'/%3E%3C/svg%3E"); }
+.ueber::after { bottom: 0; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 80' preserveAspectRatio='none'%3E%3Cpath fill='%23E5DED5' d='M0 80H1440V38C1200 6 960 4 720 30S240 76 0 42Z'/%3E%3C/svg%3E"); }
 .ueber-innen { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(40px, 7vw, 110px); align-items: center; }
 .ueber .ueber-text { margin: 22px 0 0; }
 .ueber-text p { margin: 0; }
 .ueber-text p + p { margin-top: 1em; }
 .ueber-text h4 { font: 300 1.5rem/1.2 var(--anzeige); margin: 1em 0 0.3em; color: var(--espresso); }
 .ueber-text blockquote { margin: 1em 0; padding-left: 16px; border-left: 1px solid var(--gold); font-style: italic; }
-/* Lose Bilder: leicht gedreht, ohne Rahmen, vollständig */
+/* Schwebende Bilder: gerade, leicht überlappend, weicher Schatten, kleine runde Ecken – Bild bleibt vollständig */
 .lose-bilder { position: relative; min-height: clamp(380px, 46vw, 560px); }
-.lose-bilder > * { position: absolute; width: 48%; height: auto; box-shadow: 0 28px 50px -22px rgba(36,32,28,0.45); transition: transform .8s cubic-bezier(.2,.7,.2,1); }
-.lose-bilder > :nth-child(1) { left: 0; top: 6%; transform: rotate(-5deg); }
-.lose-bilder > :nth-child(2) { right: 2%; top: 0; transform: rotate(4deg); z-index: 1; }
-.lose-bilder > :nth-child(3) { left: 24%; bottom: 0; transform: rotate(-1.5deg); z-index: 2; }
-.lose-bilder > :hover { transform: rotate(0) scale(1.03); z-index: 3; }
+.lose-bilder > * { position: absolute; width: 46%; border-radius: 14px; overflow: hidden;
+  box-shadow: 0 30px 60px -30px rgba(36,32,28,0.28), 0 8px 24px -12px rgba(36,32,28,0.12);
+  animation: schweben 7s ease-in-out infinite alternate; transition: scale .8s cubic-bezier(.2,.7,.2,1); }
+.lose-bilder > * > * { border-radius: inherit; }
+.lose-bilder > :nth-child(1) { left: 0; top: 12%; }
+.lose-bilder > :nth-child(2) { right: 0; top: 0; z-index: 1; animation-delay: -2.5s; }
+.lose-bilder > :nth-child(3) { left: 27%; bottom: 0; z-index: 2; animation-delay: -5s; }
+.lose-bilder > :hover { scale: 1.03; z-index: 3; }
+@keyframes schweben { from { translate: 0 0; } to { translate: 0 -12px; } }
 
 /* ---------- Kontakt ---------- */
 .kontakt { background: var(--kaschmir); }
