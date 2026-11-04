@@ -39,7 +39,7 @@
         "hoehe": 2048
       },
       "sichtbar": true,
-      "diashow": false
+      "diashow": true
     },
     {
       "id": "zwischenraeume-leiser-rand",
@@ -52,7 +52,7 @@
         "hoehe": 1536
       },
       "sichtbar": true,
-      "diashow": false
+      "diashow": true
     },
     {
       "id": "zwischenraeume-was-bleibt",
@@ -65,7 +65,7 @@
         "hoehe": 2048
       },
       "sichtbar": true,
-      "diashow": false
+      "diashow": true
     },
     {
       "id": "zwischenraeume-schwebe",
@@ -94,7 +94,7 @@
         "hoehe": 2013
       },
       "sichtbar": true,
-      "diashow": false
+      "diashow": true
     },
     {
       "id": "whatsapp-image-2026-10-28-at-11-30-43-e62039",
@@ -107,7 +107,7 @@
         "hoehe": 2048
       },
       "sichtbar": true,
-      "diashow": false
+      "diashow": true
     },
     {
       "id": "whatsapp-image-2026-10-28-at-11-38-18-1-a2eb32",
@@ -120,7 +120,7 @@
         "hoehe": 2048
       },
       "sichtbar": true,
-      "diashow": false
+      "diashow": true
     },
     {
       "id": "whatsapp-image-2026-10-28-at-11-38-18-2-986840",
@@ -133,7 +133,7 @@
         "hoehe": 1284
       },
       "sichtbar": true,
-      "diashow": false
+      "diashow": true
     },
     {
       "id": "whatsapp-image-2026-10-28-at-11-24-39-3-906ff8",
@@ -146,7 +146,7 @@
         "hoehe": 1536
       },
       "sichtbar": true,
-      "diashow": false
+      "diashow": true
     }
   ],
   "sammlungen": [
