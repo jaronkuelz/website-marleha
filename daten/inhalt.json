@@ -31,21 +31,24 @@
       "name": "Linien",
       "beschreibung": "Zeichnung",
       "sichtbar": true
+    },
+    {
+      "id": "inseln-1fb2d5",
+      "name": "Inseln",
+      "beschreibung": "",
+      "sichtbar": true
     }
   ],
   "werke": [
     {
       "id": "zwischenraeume-noch-nicht-morgen",
-      "titel": "Noch nicht Morgen",
-      "text": "Acryl auf Leinwand",
+      "titel": "Elefanten-Gefühl",
+      "text": "Diese Methode der Elefanten sind für mich in letzter Zeit: Sie verhelfen mich zu einer dickeren Haut und sind nie nachtragen und total wohlwollend. Und sie sind Immer für mich da. Einfach so",
       "galerie": "zwischenraeume",
-      "bild": null,
-      "platzhalter": {
-        "farbe": [
-          "#F2E3CB",
-          "#D9BF9C"
-        ],
-        "format": "3 / 4"
+      "bild": {
+        "pfad": "bilder/werke/noch-nicht-morgen-c89fa8.jpg",
+        "breite": 1572,
+        "hoehe": 2048
       },
       "sichtbar": true,
       "diashow": true
@@ -302,6 +305,19 @@
           "#D8C7AE"
         ],
         "format": "4 / 3"
+      },
+      "sichtbar": true,
+      "diashow": false
+    },
+    {
+      "id": "whatsapp-image-2026-10-28-at-11-30-43-e62039",
+      "titel": "Elefanten-Gefühl",
+      "text": "Das Elefanten-Gefühl: Elefanten helfen dabei, eine dickere Haut zu entwickeln. Sie sind nicht nachtragend, begegnen anderen stets wohlwollend und sind einfach da, ohne etwas zu erwarten oder Bedingungen zu stellen.",
+      "galerie": "inseln-1fb2d5",
+      "bild": {
+        "pfad": "bilder/werke/whatsapp-image-2026-10-28-at-11-30-43-e62039.jpg",
+        "breite": 1572,
+        "hoehe": 2048
       },
       "sichtbar": true,
       "diashow": false
