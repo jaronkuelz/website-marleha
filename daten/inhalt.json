@@ -41,62 +41,40 @@
   ],
   "werke": [
     {
-      "id": "zwischenraeume-noch-nicht-morgen",
-      "titel": "Elefanten-Gefühl",
-      "text": "Diese Methode der Elefanten sind für mich in letzter Zeit: Sie verhelfen mich zu einer dickeren Haut und sind nie nachtragen und total wohlwollend. Und sie sind Immer für mich da. Einfach so",
+      "id": "zwischenraeume-zwei-stimmen",
+      "titel": "Vertrauen ",
+      "text": "Zwischen Essstörung und unachtsamem Süßigkeitenkonsum zu jeder Mahlzeit lernen, auf den eigenen Körper zu hören und ihm zu vertrauen.",
       "galerie": "zwischenraeume",
       "bild": {
-        "pfad": "bilder/werke/noch-nicht-morgen-c89fa8.jpg",
-        "breite": 1572,
+        "pfad": "bilder/werke/zwei-stimmen-b546d4.jpg",
+        "breite": 1570,
         "hoehe": 2048
-      },
-      "sichtbar": true,
-      "diashow": true
-    },
-    {
-      "id": "zwischenraeume-was-bleibt",
-      "titel": "Was bleibt",
-      "text": "",
-      "galerie": "zwischenraeume",
-      "bild": null,
-      "platzhalter": {
-        "farbe": [
-          "#EDE2D2",
-          "#CDB89C"
-        ],
-        "format": "4 / 3"
-      },
-      "sichtbar": true,
-      "diashow": false
-    },
-    {
-      "id": "zwischenraeume-zwei-stimmen",
-      "titel": "Zwei Stimmen",
-      "text": "Öl auf Holz. Gemalt in einem einzigen Nachmittag.",
-      "galerie": "zwischenraeume",
-      "bild": null,
-      "platzhalter": {
-        "farbe": [
-          "#F4E6D3",
-          "#E0C7A6"
-        ],
-        "format": "1 / 1"
       },
       "sichtbar": true,
       "diashow": false
     },
     {
       "id": "zwischenraeume-leiser-rand",
-      "titel": "Leiser Rand",
-      "text": "",
+      "titel": "Authentizität ",
+      "text": "Zwischen dem Drang zur Selbstoptimierung und dem Vergessen des eigenen Selbst lernen, für sich zu sorgen, ohne sich verändern zu müssen. Authentisch zwischen den Welten bleiben.",
       "galerie": "zwischenraeume",
-      "bild": null,
-      "platzhalter": {
-        "farbe": [
-          "#EFE5D8",
-          "#D6C3AA"
-        ],
-        "format": "2 / 3"
+      "bild": {
+        "pfad": "bilder/werke/leiser-rand-9e2598.jpg",
+        "breite": 2048,
+        "hoehe": 1536
+      },
+      "sichtbar": true,
+      "diashow": false
+    },
+    {
+      "id": "zwischenraeume-was-bleibt",
+      "titel": "Wut",
+      "text": "Zwischen der Angst vor Enttäuschung und dem Mut, dennoch zu lieben. Zwischen der Sehnsucht nach dem, was sein könnte, und der Wut über das, was fehlt. Auf der Suche nach einem Weg, dieser Wut Raum zu geben, ohne aus dem eigenen Schmerz einen Vorwurf an den anderen zu machen.",
+      "galerie": "zwischenraeume",
+      "bild": {
+        "pfad": "bilder/werke/was-bleibt-64ae44.jpg",
+        "breite": 2048,
+        "hoehe": 2048
       },
       "sichtbar": true,
       "diashow": false
