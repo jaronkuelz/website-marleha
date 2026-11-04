@@ -15,27 +15,15 @@
       "sichtbar": true
     },
     {
-      "id": "lichtnotizen",
-      "name": "Lichtnotizen",
-      "beschreibung": "Fotografie",
-      "sichtbar": true
-    },
-    {
-      "id": "erdstuecke",
-      "name": "Erdstücke",
-      "beschreibung": "Objekte",
-      "sichtbar": true
-    },
-    {
-      "id": "linien",
-      "name": "Linien",
-      "beschreibung": "Zeichnung",
-      "sichtbar": true
-    },
-    {
       "id": "inseln-1fb2d5",
       "name": "Inseln",
       "beschreibung": "",
+      "sichtbar": true
+    },
+    {
+      "id": "emotional-flow-168165",
+      "name": "Emotional-Flow",
+      "beschreibung": "Emotions are like a body of water—one that longs to be, and must be, swum across. ",
       "sichtbar": true
     }
   ],
@@ -96,33 +84,14 @@
       "diashow": false
     },
     {
-      "id": "lichtnotizen-fenster-vier-uhr",
-      "titel": "Fenster, vier Uhr",
-      "text": "",
-      "galerie": "lichtnotizen",
-      "bild": null,
-      "platzhalter": {
-        "farbe": [
-          "#ECEAE6",
-          "#C8C5C0"
-        ],
-        "format": "3 / 4"
-      },
-      "sichtbar": true,
-      "diashow": false
-    },
-    {
       "id": "lichtnotizen-nachhall",
       "titel": "Nachhall",
       "text": "Analog, 35 mm",
-      "galerie": "lichtnotizen",
-      "bild": null,
-      "platzhalter": {
-        "farbe": [
-          "#E9E6E1",
-          "#C3BEB7"
-        ],
-        "format": "3 / 4"
+      "galerie": null,
+      "bild": {
+        "pfad": "bilder/werke/nachhall-4d5ba8.jpg",
+        "breite": 2048,
+        "hoehe": 2048
       },
       "sichtbar": true,
       "diashow": true
@@ -131,7 +100,7 @@
       "id": "lichtnotizen-kante-des-tages",
       "titel": "Kante des Tages",
       "text": "",
-      "galerie": "lichtnotizen",
+      "galerie": null,
       "bild": null,
       "platzhalter": {
         "farbe": [
@@ -147,7 +116,7 @@
       "id": "lichtnotizen-stille-wasser",
       "titel": "Stille Wasser",
       "text": "Digital, Farbe",
-      "galerie": "lichtnotizen",
+      "galerie": null,
       "bild": null,
       "platzhalter": {
         "farbe": [
@@ -163,7 +132,7 @@
       "id": "erdstuecke-schale-fuer-nichts",
       "titel": "Schale für nichts",
       "text": "Ton, ungebrannt",
-      "galerie": "erdstuecke",
+      "galerie": null,
       "bild": null,
       "platzhalter": {
         "farbe": [
@@ -179,7 +148,7 @@
       "id": "erdstuecke-gefaess-ii",
       "titel": "Gefäß II",
       "text": "",
-      "galerie": "erdstuecke",
+      "galerie": null,
       "bild": null,
       "platzhalter": {
         "farbe": [
@@ -195,7 +164,7 @@
       "id": "erdstuecke-halt",
       "titel": "Halt",
       "text": "Ton und Draht",
-      "galerie": "erdstuecke",
+      "galerie": null,
       "bild": null,
       "platzhalter": {
         "farbe": [
@@ -211,7 +180,7 @@
       "id": "linien-ein-strich-ein-atem",
       "titel": "Ein Strich, ein Atem",
       "text": "Tusche auf Papier",
-      "galerie": "linien",
+      "galerie": null,
       "bild": null,
       "platzhalter": {
         "farbe": [
@@ -227,7 +196,7 @@
       "id": "linien-hand-wartend",
       "titel": "Hand, wartend",
       "text": "",
-      "galerie": "linien",
+      "galerie": null,
       "bild": null,
       "platzhalter": {
         "farbe": [
@@ -243,7 +212,7 @@
       "id": "linien-skizze-fuer-spaeter",
       "titel": "Skizze für später",
       "text": "Bleistift",
-      "galerie": "linien",
+      "galerie": null,
       "bild": null,
       "platzhalter": {
         "farbe": [
@@ -259,7 +228,7 @@
       "id": "linien-umriss",
       "titel": "Umriss",
       "text": "",
-      "galerie": "linien",
+      "galerie": null,
       "bild": null,
       "platzhalter": {
         "farbe": [
@@ -309,6 +278,45 @@
         "pfad": "bilder/werke/whatsapp-image-2026-10-28-at-11-30-43-e62039.jpg",
         "breite": 1572,
         "hoehe": 2048
+      },
+      "sichtbar": true,
+      "diashow": false
+    },
+    {
+      "id": "whatsapp-image-2026-10-28-at-11-38-18-1-a2eb32",
+      "titel": "Traurig",
+      "text": "Manchmal ist man traurig. Das ist in Ordnung. ",
+      "galerie": "emotional-flow-168165",
+      "bild": {
+        "pfad": "bilder/werke/whatsapp-image-2026-10-28-at-11-38-18-1-a2eb32.jpg",
+        "breite": 2048,
+        "hoehe": 2048
+      },
+      "sichtbar": true,
+      "diashow": false
+    },
+    {
+      "id": "whatsapp-image-2026-10-28-at-11-38-18-2-986840",
+      "titel": "Wach ",
+      "text": "Manchmal ist man wach. Das ist in Ordnung. ",
+      "galerie": "emotional-flow-168165",
+      "bild": {
+        "pfad": "bilder/werke/whatsapp-image-2026-10-28-at-11-38-18-2-986840.jpg",
+        "breite": 2048,
+        "hoehe": 1284
+      },
+      "sichtbar": true,
+      "diashow": false
+    },
+    {
+      "id": "whatsapp-image-2026-10-28-at-11-24-39-3-906ff8",
+      "titel": "No Drama",
+      "text": "",
+      "galerie": "emotional-flow-168165",
+      "bild": {
+        "pfad": "bilder/werke/whatsapp-image-2026-10-28-at-11-24-39-3-906ff8.jpg",
+        "breite": 2048,
+        "hoehe": 1536
       },
       "sichtbar": true,
       "diashow": false
