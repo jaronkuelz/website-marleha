@@ -165,16 +165,16 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
 .ueber-text p + p { margin-top: 1em; }
 .ueber-text h4 { font: 300 1.5rem/1.2 var(--anzeige); margin: 1em 0 0.3em; color: var(--espresso); }
 .ueber-text blockquote { margin: 1em 0; padding-left: 16px; border-left: 1px solid var(--gold); font-style: italic; }
-/* Schwebende Bilder: gerade, leicht überlappend, weicher Schatten, kleine runde Ecken – Bild bleibt vollständig */
-.lose-bilder { position: relative; min-height: clamp(380px, 46vw, 560px); }
-.lose-bilder > * { position: absolute; width: 46%; border-radius: 28px; overflow: hidden;
+/* Schwebende Bilder: im eigenen Seitenverhältnis, ohne Überlappung, weicher Schatten, runde Ecken – Bild bleibt vollständig */
+.lose-bilder { display: flex; align-items: center; gap: clamp(14px, 2.4vw, 28px); }
+.lose-bilder .spalte { flex: 1 1 0; min-width: 0; display: grid; gap: clamp(14px, 2.4vw, 28px); }
+.lose-bilder button { display: block; width: 100%; border-radius: clamp(18px, 2.4vw, 28px); overflow: hidden;
   box-shadow: 0 30px 60px -30px rgba(36,32,28,0.28), 0 8px 24px -12px rgba(36,32,28,0.12);
   animation: schweben 7s ease-in-out infinite alternate; transition: scale .8s cubic-bezier(.2,.7,.2,1); }
-.lose-bilder > * > * { border-radius: inherit; }
-.lose-bilder > :nth-child(1) { left: 0; top: 12%; }
-.lose-bilder > :nth-child(2) { right: 0; top: 0; z-index: 1; animation-delay: -2.5s; }
-.lose-bilder > :nth-child(3) { left: 27%; bottom: 0; z-index: 2; animation-delay: -5s; }
-.lose-bilder > :hover { scale: 1.03; z-index: 3; }
+.lose-bilder .bild { width: 100%; height: auto; }
+.lose-bilder .spalte:nth-child(2) button:nth-child(1) { animation-delay: -2.5s; }
+.lose-bilder .spalte:nth-child(2) button:nth-child(2) { animation-delay: -5s; }
+.lose-bilder button:hover { scale: 1.03; }
 @keyframes schweben { from { translate: 0 0; } to { translate: 0 -12px; } }
 
 /* ---------- Kontakt ---------- */
@@ -225,7 +225,6 @@ dialog[open] { animation: erscheinen .5s cubic-bezier(.2,.7,.2,1); }
   .ueber { text-align: center; }
   .ueber-innen { grid-template-columns: 1fr; }
   .ueber .ueber-text { margin: 22px auto 0; }
-  .lose-bilder { min-height: 92vw; }
   .werk-gross { grid-template-columns: 1fr; }
   .werk-gross .bild { min-height: 260px; max-height: 55vh; }
 }

@@ -182,18 +182,24 @@ function starteDiashow(c) {
   if (dias.length > 1 && !ruhig) setInterval(() => zeige((i + 1) % dias.length), 7000);
 }
 
-// ---------- Lose Bilder bei „Über mich“ (leicht gedreht, ohne Rahmen) ----------
+// ---------- Schwebende Bilder bei „Über mich“ ----------
+// Zwei Spalten: das höchste Bild allein, die anderen darüber und darunter – so bleibt jedes Bild ganz sichtbar
 function baueLoseBilder(c) {
   const auswahl = c.werke.filter((w) => w.bild).concat(c.werke.filter((w) => !w.bild && w.platzhalter)).slice(0, 3);
-  $(".lose-bilder").replaceChildren(...auswahl.map((w) => {
-    const knopf = el("button");
-    knopf.type = "button";
-    knopf.setAttribute("aria-label", w.titel + " ansehen");
-    const b = bildFuer(w);
-    b.style.width = "100%";
-    knopf.append(b);
-    knopf.addEventListener("click", () => zeigeWerk(w, ""));
-    return knopf;
+  const hoehe = (w) => (w.bild ? w.bild.hoehe / w.bild.breite : 1);
+  const hoechstes = auswahl.reduce((a, w) => (hoehe(w) > hoehe(a) ? w : a), auswahl[0]);
+  const spalten = [[hoechstes], auswahl.filter((w) => w !== hoechstes)].filter((s) => s.length);
+  $(".lose-bilder").replaceChildren(...spalten.map((spalte) => {
+    const box = el("div", "spalte");
+    box.append(...spalte.map((w) => {
+      const knopf = el("button");
+      knopf.type = "button";
+      knopf.setAttribute("aria-label", w.titel + " ansehen");
+      knopf.append(bildFuer(w));
+      knopf.addEventListener("click", () => zeigeWerk(w, ""));
+      return knopf;
+    }));
+    return box;
   }));
 }
 
