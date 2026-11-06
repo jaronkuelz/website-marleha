@@ -136,8 +136,8 @@
   "sammlungen": [
     {
       "id": "gedanken",
-      "name": "Gedanken",
-      "beschreibung": "",
+      "name": "College Block ",
+      "beschreibung": "Einfach rausgeschriebene Gedanken",
       "sichtbar": true
     },
     {
@@ -154,6 +154,38 @@
     }
   ],
   "texte": [
+    {
+      "id": "text-439401",
+      "titel": "Freiheit ",
+      "datum": "2026-11-06",
+      "sammlung": "gedanken",
+      "inhalt": "Ein Lächeln. \nWasser fließt in meinen Körper. \nDieser Körper voller Wasser.\nDieser wundervolle Körper voller Liebe. \nDiese Masse. \nDiese Energie.\nButterbrot. \nButterbrot mit Käse.\nDas ist Freiheit. \nButterbrot ist Freiheit. \nMaterialisierte Freiheit. \nEin. Aus. \nZiehe die Zweifel aus den Ohren raus. \nBlumen blühen. \nDie Wurzeln, sie sind immer da.\nNur blühen sie nicht das ganze Jahr. \nHabe neue Sorten entdeckt. \nDie sind wetterbeständiger und robust. \nDas Leben gehackt. \nEs gibt diese Freiheit, ich hab’s doch gewusst!\nStolz. \nSO STOLZ. \n",
+      "sichtbar": true
+    },
+    {
+      "id": "text-b961e4",
+      "titel": "Gemeinsam ",
+      "datum": "2024-12-07",
+      "sammlung": "gedanken",
+      "inhalt": "Neben mir ein Mensch. \nIch in meiner Welt. \nTrotzdem nicht verloren. \nEr hat die Augen zu.\nParis. \nLiebe fließt durch mich durch. \nParis.\nEs geht also doch. \nAllein, gemeinsam, zusammen hier. \n",
+      "sichtbar": true
+    },
+    {
+      "id": "text-ffbbf5",
+      "titel": "Noch immer am Leben ",
+      "datum": "2023-05-06",
+      "sammlung": "gedanken",
+      "inhalt": "Es ist so verrückt.\nIch lebe \nNoch immer \nIch lebe \nNoch immer \nImmer immer \nNoch \nLebe ich. \nSO viele Gefühle\nGekommen und gegangen. \nSO viele Gedanken.\nGekommen und gegangen.\nSO viel Freude\nGekommen und gegangen.\nSO viel Leid\nGekommen und gegangen. \nMeine Hände schreiben \nSo wie schon 54201 tausend Wörter zuvor \nUnd noch viele Mehr\nAlles kommt und geht \nUnd geht und kommt \n",
+      "sichtbar": true
+    },
+    {
+      "id": "text-bbbee6",
+      "titel": "Vertrauen ",
+      "datum": "2022-11-27",
+      "sammlung": "gedanken",
+      "inhalt": "Entscheidungen\nJa\nNein \nVielleicht\nJa.\nAber wenn…?\nAlso nein.\nAber vielleicht…?\nEgal.\nSo egal. \nKaffee, Tee…\nKleid, Hose…\nJa, Nein\nEgal.\nAlso Kontrolle abgeben\nVertrauen\nKopf freier\nHerz freier\n",
+      "sichtbar": true
+    },
     {
       "id": "text-b65220",
       "titel": "Angst",
