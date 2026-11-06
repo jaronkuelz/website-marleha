@@ -205,7 +205,7 @@
     },
     {
       "id": "whatsapp-image-2026-11-06-at-09-28-45-c18c94",
-      "titel": "Rote Wolken ",
+      "titel": "Abend Wolken ",
       "text": "",
       "galerie": "wolken-06edfd",
       "bild": {
@@ -298,11 +298,63 @@
       "id": "whatsapp-image-2026-11-06-at-09-30-44-8377d3",
       "titel": "Der Glaube zählt. ",
       "text": "",
-      "galerie": null,
+      "galerie": "inseln-1fb2d5",
       "bild": {
         "pfad": "bilder/werke/whatsapp-image-2026-11-06-at-09-30-44-8377d3.jpg",
         "breite": 806,
         "hoehe": 2048
+      },
+      "sichtbar": true,
+      "diashow": false
+    },
+    {
+      "id": "whatsapp-image-2026-11-06-at-09-28-42-1-e7ad32",
+      "titel": "Nacht Wolken ",
+      "text": "",
+      "galerie": "wolken-06edfd",
+      "bild": {
+        "pfad": "bilder/werke/whatsapp-image-2026-11-06-at-09-28-42-1-e7ad32.jpg",
+        "breite": 2048,
+        "hoehe": 1868
+      },
+      "sichtbar": true,
+      "diashow": false
+    },
+    {
+      "id": "whatsapp-image-2026-11-06-at-09-28-42-2-5a4e7c",
+      "titel": "Rote Wolken ",
+      "text": "",
+      "galerie": "wolken-06edfd",
+      "bild": {
+        "pfad": "bilder/werke/whatsapp-image-2026-11-06-at-09-28-42-2-5a4e7c.jpg",
+        "breite": 2048,
+        "hoehe": 1536
+      },
+      "sichtbar": true,
+      "diashow": false
+    },
+    {
+      "id": "whatsapp-image-2026-11-06-at-09-28-46-b95ddb",
+      "titel": "Fenster Wolke",
+      "text": "",
+      "galerie": "wolken-06edfd",
+      "bild": {
+        "pfad": "bilder/werke/whatsapp-image-2026-11-06-at-09-28-46-b95ddb.jpg",
+        "breite": 1536,
+        "hoehe": 2048
+      },
+      "sichtbar": true,
+      "diashow": false
+    },
+    {
+      "id": "whatsapp-image-2026-11-06-at-09-28-43-1-3e6405",
+      "titel": "Überflogene Wolke",
+      "text": "",
+      "galerie": "wolken-06edfd",
+      "bild": {
+        "pfad": "bilder/werke/whatsapp-image-2026-11-06-at-09-28-43-1-3e6405.jpg",
+        "breite": 2048,
+        "hoehe": 1536
       },
       "sichtbar": true,
       "diashow": false
