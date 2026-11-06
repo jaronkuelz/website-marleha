@@ -137,13 +137,13 @@
     {
       "id": "gedanken",
       "name": "College Block ",
-      "beschreibung": "Einfach rausgeschriebene Gedanken",
+      "beschreibung": "Rausgeschriebene Gedanken",
       "sichtbar": true
     },
     {
       "id": "kleine-texte-e1bdf3",
       "name": "Kleine Texte",
-      "beschreibung": "",
+      "beschreibung": "Ein Umgang mit dem, was da ist.",
       "sichtbar": true
     },
     {
