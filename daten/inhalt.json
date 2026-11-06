@@ -68,22 +68,6 @@
       "diashow": true
     },
     {
-      "id": "zwischenraeume-schwebe",
-      "titel": "Schwebe",
-      "text": "Aquarell",
-      "galerie": "zwischenraeume",
-      "bild": null,
-      "platzhalter": {
-        "farbe": [
-          "#F3E9DC",
-          "#DACBB6"
-        ],
-        "format": "5 / 4"
-      },
-      "sichtbar": true,
-      "diashow": false
-    },
-    {
       "id": "whatsapp-image-2026-10-28-at-11-24-39-2-3f8444",
       "titel": "Game Changer",
       "text": "In Momenten der Verwirrtheit nach dem einen Perspektivwechsel suchen. Ihn finden. Und nutzen. Das Leben darf einfach sein. Das Leben darf einfach schön sein. ",
@@ -155,39 +139,107 @@
       "name": "Gedanken",
       "beschreibung": "",
       "sichtbar": true
+    },
+    {
+      "id": "kleine-texte-e1bdf3",
+      "name": "Kleine Texte",
+      "beschreibung": "",
+      "sichtbar": true
+    },
+    {
+      "id": "dankbarkeit-5e9cb8",
+      "name": "Dankbarkeit",
+      "beschreibung": "Dankbarkeit kann Wunder bewirken. Sie ist immer da. Manchmal müssen wir uns nur umdrehen und sie einladen. ",
+      "sichtbar": true
     }
   ],
   "texte": [
     {
+      "id": "text-b65220",
+      "titel": "Angst",
+      "datum": "2025-02-25",
+      "sammlung": "dankbarkeit-5e9cb8",
+      "inhalt": "Ich stehe auf einem Felsen und schaue runter. Meine Beine fühlen sich weich an. Mein Herz schlägt schnell. 1, 2, 3 und ich springe runter in das Wasser. Ich fahre Snowboard. Alles ist weiß. Ich sehe kaum, was direkt vor mir ist. Ich lasse los und fahre den Abhang runter. Ich weiß, was ich fühle. Starke Gefühle. Mein Herz schlägt, du sitzt mir gegenüber. Meine Stimme ist leise aber sie spricht. Sie spricht das aus, was sich größer und wichtiger anfühlt als jedes Wort, welches versucht, die Gefühle zu beschreiben. Liebe Angst, du bist sehr präsent. Tag für Tag bist du bei mir. Du treuer Begleiter. Was für eine Chance, dich zu erkennen und zu überwinden. Dinge zu tun, die sich unmöglich anfühlen. Was für ein Gefühl der Lebendigkeit! So intensiv. So real. Ich danke dir! ",
+      "sichtbar": true
+    },
+    {
+      "id": "text-31a119",
+      "titel": "Sicherheit",
+      "datum": "2025-07-25",
+      "sammlung": "dankbarkeit-5e9cb8",
+      "inhalt": "Danke, dass ich mich im Moment in einem Land und in einer Umgebung befinde, in dem ich mich sicher fühle. Ich bin sehr dankbar dafür, dass ich meine Augen schließen kann und die Sonne genieße, ohne Angst zu haben, dass mir meine Sachen gestohlen werden. Danke leben, dass diese Orte existieren und ich mich meistens an solchen Orten befinde. Danke.",
+      "sichtbar": true
+    },
+    {
+      "id": "text-36839d",
+      "titel": "Gefühle",
+      "datum": "2025-06-23",
+      "sammlung": "dankbarkeit-5e9cb8",
+      "inhalt": "Emotionen, Gefühle, Liebe, Trauer, Wut, Euphorie, Einsamkeit, Verbundenheit, lieben Dank Ihr Gefühle, dass Ihr existiert. Danke liebes Leben, dass ich fühle. Gefühle machen das Leben bunt und grau und dadurch noch bunter. Ihr durchströmt mich mit einem Gefühl von Lebendigkeit. Manchmal voller Schmerz, manchmal voller Freude. Manchmal schaffe ich es, euch zu erkennen und manchmal stürze ich mich in euch hinein und lasse mich mitreißen, ohne es zu merken. Aber auch das gehört dazu. Danke, dass Ich fühle. Danke, liebe Gefühle.  ",
+      "sichtbar": true
+    },
+    {
+      "id": "text-ea80da",
+      "titel": "Brücke",
+      "datum": "2025-05-20",
+      "sammlung": "dankbarkeit-5e9cb8",
+      "inhalt": "Danke liebe Brücke bzw. Danke an die Menschen und das Material, durch die bzw. welches du existieren kannst! Du ermöglichst es mir, Wasser zu überqueren und auf die andere Seite zu gelangen. Ich liebe es, auf Dir zu laufen oder zu fahren und die Aussicht und den Wind zu genießen. Du bist etwas Besonderes und ich bin froh, dass du ein Teil meines Alltags bst. Danke. ",
+      "sichtbar": true
+    },
+    {
+      "id": "text-95b8e2",
+      "titel": "Jackentasche",
+      "datum": "2022-09-16",
+      "sammlung": "dankbarkeit-5e9cb8",
+      "inhalt": "Geliebte Jackentasche! Danke, dass es dich gibt. Dank Dir kann ich Dinge mit mir transportieren, ohne eine Tasche mitnehmen zu müssen und wenn meine Hände kalt sind spendest du mir Wärme und Sicherheit. Ne‘ super duper Erfindung bist du :D",
+      "sichtbar": true
+    },
+    {
+      "id": "text-ffa9d8",
+      "titel": "Heimat",
+      "datum": "2024-05-13",
+      "sammlung": "dankbarkeit-5e9cb8",
+      "inhalt": "…oder ein Ort, von dem man weiß, dass man die Nacht dort verbringen kann. Ein Ort, an dem man geschützt ist. Ein Ort, an dem es warm ist, man fließendes Wasser hat und zur Ruhe kommen kann. Du bist so unglaublich viel wert. Danke, dass mir solch ein Gefühl immer wieder ermöglicht wird. ",
+      "sichtbar": true
+    },
+    {
+      "id": "text-e60884",
+      "titel": "Geld",
+      "datum": "2022-08-06",
+      "sammlung": "dankbarkeit-5e9cb8",
+      "inhalt": "Indem ich dich weggebe, kann ich dich in wundervolle Dinge umtauschen. Du ermöglichst mir, Essen zu kaufen, einen Schlafplatzt zu haben und Menschen, sowie Orte zu besichtigen. Danke. ",
+      "sichtbar": true
+    },
+    {
+      "id": "text-f5cd29",
+      "titel": "Post",
+      "datum": "2021-11-10",
+      "sammlung": "dankbarkeit-5e9cb8",
+      "inhalt": "Liebe Post und damit allem Leben, das ein Teil der Post ist. Danke, danke, danke!!! Dank Dir Leben, dass in den Menschen ist, die für die Post Tätig sind und dadurch die Existenz der Post ermöglichen, kann ich Dinge von einem Ort an schicken, ohne dafür meinen Standort zu wechseln und ohne, diese Dinge selbst tragen zu müssen. Es gäbe ohne Dich zwar auch leben, aber dank dir ist es manchmal so wunderschön einfach und unkompliziert.",
+      "sichtbar": true
+    },
+    {
       "id": "verweilen",
-      "titel": "Über das Verweilen",
-      "datum": "2026-09-14",
-      "sammlung": "gedanken",
-      "inhalt": "Platzhalter – hier steht später Marlehas Text.\n\nJeder Absatz bekommt einen eigenen Eintrag, damit der Text gut lesbar bleibt.",
+      "titel": "Ungewissheit",
+      "datum": "2026-11-06",
+      "sammlung": "kleine-texte-e1bdf3",
+      "inhalt": "In der Ungewissheit liegt die Hoffnung der Gewissheit. Man hat die Wahl. Strudelt man in die Ungewissheit hinein und folgt den Gedanken des ewigen Schlunds der wirbelnden Sandkörner. Oder bleibt man an der Oberfläche der Ungewissheit und wartet darauf, dass die Gewissheit einen abholen mag. Im Erkennen der Ungewissheit steckt die Gewissheit der Ungewissheit.",
       "sichtbar": true
     },
     {
       "id": "licht",
-      "titel": "Licht, das bleibt",
-      "datum": "2026-08-02",
-      "sammlung": "gedanken",
-      "inhalt": "Platzhalter – hier steht später Marlehas Text.",
+      "titel": "Irgendwo dazwischen",
+      "datum": "2026-10-28",
+      "sammlung": "kleine-texte-e1bdf3",
+      "inhalt": "Zwischen totalem Quatsch und ernster Ernsthaftigkeit. Zwischen den Dingen, die wir wahrnehmen, und denen, die uns erzählt werden. Zwischen oben und unten und zwischen gut und schlecht. Irgendwo da liegt das Geheimnis unserer Existenz und das Schöne ist, dass es nicht unsere Aufgabe ist, es zu kennen. Wir können sehr wohl in Kunst ausdrücken, welche Gestalten sie annimmt. Und ob das dann eben in totalem Quatsch oder ernster Ernsthaftigkeit geschieht, das ist im Endeffekt sehr irrelevant. Es ist das Gleiche. Wenn nicht sogar dasselbe. Es ist das, was wir Menschen tun können. Wir können das Dazwischen ausleben. Wir Menschen sind nicht dafür auf der Welt, ein Punkt zu sein. Wir sind hier, um das Spektrum zu erkunden und es auszufüllen. Und das schöne ist, dass wir uns nicht zuordnen müssen. Nicht dem totalen Quatsch und auch nicht der totalen Ernsthaftigkeit. Irgendwo dazwischen sind wir eben alles.\n\nIrgendwo zwischen Essstörung und unachtsamem Süßigkeit-zu-jeder-Mahlzeit-Essen. Zwischen Sportsucht und Sportabwehr. Zwischen dem Hetzen und dem sehr langsamen Gehen. Zwischen Burnout und totalem Rückzug. Zwischen algorithmischer Perfektion und menschlicher Handschrift. Irgendwo zwischen kompletter Kontrolle und blindem Vertrauen sind wir Menschen. Das kann man dann nur noch akzeptieren. \n\nKunst hilft! Und auch der Kunst hilft das Akzeptieren, dass sie durch uns durchfließt. Wir können sie nicht erzwingen und sie aufzuhalten, kann uns krank machen. Irgendwo zwischen dem Zwang, etwas Neues erschaffen zu wollen und der Angst, der Welt überhaupt etwas hinzuzufügen. Und vor allem den Absprung schaffen, wenn die Kunst nicht mehr fließt oder man sie zu persönlich nimmt. Da muss man dann einfach aufhören. Der Zeitpunkt ist bei mir genau JETZT! \n",
       "sichtbar": true
     },
     {
       "id": "zwischen-zwei-farben",
-      "titel": "Zwischen zwei Farben",
+      "titel": "Emotional flow ",
       "datum": "2026-06-21",
-      "sammlung": "gedanken",
-      "inhalt": "Platzhalter – hier steht später Marlehas Text.",
-      "sichtbar": true
-    },
-    {
-      "id": "haende",
-      "titel": "Was Hände wissen",
-      "datum": "2026-05-09",
-      "sammlung": null,
-      "inhalt": "Platzhalter – hier steht später Marlehas Text.",
+      "sammlung": "kleine-texte-e1bdf3",
+      "inhalt": "Emotions are like a body of water—one that longs to be, and must be, swum across. By allowing ourselves to feel every emotion, we gain the power to shape our lives just as we wish. Life flows through me, and I have no desire to hold it back. This also means bringing my inner world to the outside through art—a way to make the ineffable visible, and to engage with the profound abundance that life bestows upon us.",
       "sichtbar": true
     }
   ]
