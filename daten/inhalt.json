@@ -140,7 +140,7 @@
     },
     {
       "id": "whatsapp-image-2026-11-06-at-09-28-41-c3b754",
-      "titel": "Weiche Wolken",
+      "titel": "Weiche Wolke",
       "text": "",
       "galerie": "wolken-06edfd",
       "bild": {
@@ -157,9 +157,9 @@
       "text": "",
       "galerie": "wolken-06edfd",
       "bild": {
-        "pfad": "bilder/werke/klare-wolken-4b0adb.jpg",
+        "pfad": "bilder/werke/klare-wolken-bafd74.jpg",
         "breite": 2048,
-        "hoehe": 1536
+        "hoehe": 1124
       },
       "sichtbar": true,
       "diashow": false
@@ -192,13 +192,13 @@
     },
     {
       "id": "whatsapp-image-2026-11-06-at-09-28-42-ae6de7",
-      "titel": "Hallo Vogel ",
+      "titel": "Vogel ",
       "text": "",
       "galerie": "wolken-06edfd",
       "bild": {
-        "pfad": "bilder/werke/whatsapp-image-2026-11-06-at-09-28-42-ae6de7.jpg",
-        "breite": 828,
-        "hoehe": 619
+        "pfad": "bilder/werke/vogel-0696c0.jpg",
+        "breite": 812,
+        "hoehe": 618
       },
       "sichtbar": true,
       "diashow": false
