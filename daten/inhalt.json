@@ -25,6 +25,12 @@
       "name": "Emotional-Flow",
       "beschreibung": "Emotions are like a body of water—one that longs to be, and must be, swum across. ",
       "sichtbar": true
+    },
+    {
+      "id": "wolken-06edfd",
+      "name": "Wolken",
+      "beschreibung": "Ich liebe Wolken. So wie es keinen Moment zweimal gibt, ist auch ihre Form vergänglich und einmalig. ",
+      "sichtbar": true
     }
   ],
   "werke": [
@@ -131,6 +137,84 @@
       },
       "sichtbar": true,
       "diashow": true
+    },
+    {
+      "id": "whatsapp-image-2026-11-06-at-09-28-41-c3b754",
+      "titel": "Weiche Wolken",
+      "text": "",
+      "galerie": "wolken-06edfd",
+      "bild": {
+        "pfad": "bilder/werke/whatsapp-image-2026-11-06-at-09-28-41-c3b754.jpg",
+        "breite": 1536,
+        "hoehe": 2048
+      },
+      "sichtbar": true,
+      "diashow": false
+    },
+    {
+      "id": "whatsapp-image-2026-11-06-at-09-28-45-2-c5cb9b",
+      "titel": "Klare Wolken",
+      "text": "",
+      "galerie": "wolken-06edfd",
+      "bild": {
+        "pfad": "bilder/werke/klare-wolken-4b0adb.jpg",
+        "breite": 2048,
+        "hoehe": 1536
+      },
+      "sichtbar": true,
+      "diashow": false
+    },
+    {
+      "id": "whatsapp-image-2026-11-06-at-09-28-44-b5411d",
+      "titel": "Zerstreute Wolken ",
+      "text": "",
+      "galerie": "wolken-06edfd",
+      "bild": {
+        "pfad": "bilder/werke/whatsapp-image-2026-11-06-at-09-28-44-b5411d.jpg",
+        "breite": 2048,
+        "hoehe": 1536
+      },
+      "sichtbar": true,
+      "diashow": false
+    },
+    {
+      "id": "whatsapp-image-2026-11-06-at-09-28-41-1-5135d8",
+      "titel": "Helle Wolken ",
+      "text": "",
+      "galerie": "wolken-06edfd",
+      "bild": {
+        "pfad": "bilder/werke/whatsapp-image-2026-11-06-at-09-28-41-1-5135d8.jpg",
+        "breite": 828,
+        "hoehe": 554
+      },
+      "sichtbar": true,
+      "diashow": false
+    },
+    {
+      "id": "whatsapp-image-2026-11-06-at-09-28-42-ae6de7",
+      "titel": "Hallo Vogel ",
+      "text": "",
+      "galerie": "wolken-06edfd",
+      "bild": {
+        "pfad": "bilder/werke/whatsapp-image-2026-11-06-at-09-28-42-ae6de7.jpg",
+        "breite": 828,
+        "hoehe": 619
+      },
+      "sichtbar": true,
+      "diashow": false
+    },
+    {
+      "id": "whatsapp-image-2026-11-06-at-09-28-45-c18c94",
+      "titel": "Rote Wolken ",
+      "text": "",
+      "galerie": "wolken-06edfd",
+      "bild": {
+        "pfad": "bilder/werke/whatsapp-image-2026-11-06-at-09-28-45-c18c94.jpg",
+        "breite": 2048,
+        "hoehe": 1536
+      },
+      "sichtbar": true,
+      "diashow": false
     }
   ],
   "sammlungen": [
