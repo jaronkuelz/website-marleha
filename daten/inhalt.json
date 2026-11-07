@@ -430,14 +430,6 @@
       "sichtbar": true
     },
     {
-      "id": "text-b65220",
-      "titel": "Angst",
-      "datum": "2025-02-25",
-      "sammlung": "dankbarkeit-5e9cb8",
-      "inhalt": "Ich stehe auf einem Felsen und schaue runter. Meine Beine fühlen sich weich an. Mein Herz schlägt schnell. 1, 2, 3 und ich springe runter in das Wasser. Ich fahre Snowboard. Alles ist weiß. Ich sehe kaum, was direkt vor mir ist. Ich lasse los und fahre den Abhang runter. Ich weiß, was ich fühle. Starke Gefühle. Mein Herz schlägt, du sitzt mir gegenüber. Meine Stimme ist leise aber sie spricht. Sie spricht das aus, was sich größer und wichtiger anfühlt als jedes Wort, welches versucht, die Gefühle zu beschreiben. Liebe Angst, du bist sehr präsent. Tag für Tag bist du bei mir. Du treuer Begleiter. Was für eine Chance, dich zu erkennen und zu überwinden. Dinge zu tun, die sich unmöglich anfühlen. Was für ein Gefühl der Lebendigkeit! So intensiv. So real. Ich danke dir! ",
-      "sichtbar": true
-    },
-    {
       "id": "text-31a119",
       "titel": "Sicherheit",
       "datum": "2025-07-25",
@@ -462,11 +454,11 @@
       "sichtbar": true
     },
     {
-      "id": "text-95b8e2",
-      "titel": "Jackentasche",
-      "datum": "2022-09-16",
+      "id": "text-b65220",
+      "titel": "Angst",
+      "datum": "2025-02-25",
       "sammlung": "dankbarkeit-5e9cb8",
-      "inhalt": "Geliebte Jackentasche! Danke, dass es dich gibt. Dank Dir kann ich Dinge mit mir transportieren, ohne eine Tasche mitnehmen zu müssen und wenn meine Hände kalt sind spendest du mir Wärme und Sicherheit. Ne‘ super duper Erfindung bist du :D",
+      "inhalt": "Ich stehe auf einem Felsen und schaue runter. Meine Beine fühlen sich weich an. Mein Herz schlägt schnell. 1, 2, 3 und ich springe runter in das Wasser. Ich fahre Snowboard. Alles ist weiß. Ich sehe kaum, was direkt vor mir ist. Ich lasse los und fahre den Abhang runter. Ich weiß, was ich fühle. Starke Gefühle. Mein Herz schlägt, du sitzt mir gegenüber. Meine Stimme ist leise aber sie spricht. Sie spricht das aus, was sich größer und wichtiger anfühlt als jedes Wort, welches versucht, die Gefühle zu beschreiben. Liebe Angst, du bist sehr präsent. Tag für Tag bist du bei mir. Du treuer Begleiter. Was für eine Chance, dich zu erkennen und zu überwinden. Dinge zu tun, die sich unmöglich anfühlen. Was für ein Gefühl der Lebendigkeit! So intensiv. So real. Ich danke dir! ",
       "sichtbar": true
     },
     {
@@ -475,6 +467,14 @@
       "datum": "2024-05-13",
       "sammlung": "dankbarkeit-5e9cb8",
       "inhalt": "…oder ein Ort, von dem man weiß, dass man die Nacht dort verbringen kann. Ein Ort, an dem man geschützt ist. Ein Ort, an dem es warm ist, man fließendes Wasser hat und zur Ruhe kommen kann. Du bist so unglaublich viel wert. Danke, dass mir solch ein Gefühl immer wieder ermöglicht wird. ",
+      "sichtbar": true
+    },
+    {
+      "id": "text-95b8e2",
+      "titel": "Jackentasche",
+      "datum": "2022-09-16",
+      "sammlung": "dankbarkeit-5e9cb8",
+      "inhalt": "Geliebte Jackentasche! Danke, dass es dich gibt. Dank Dir kann ich Dinge mit mir transportieren, ohne eine Tasche mitnehmen zu müssen und wenn meine Hände kalt sind spendest du mir Wärme und Sicherheit. Ne‘ super duper Erfindung bist du :D",
       "sichtbar": true
     },
     {
