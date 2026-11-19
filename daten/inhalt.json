@@ -126,17 +126,17 @@
       "diashow": true
     },
     {
-      "id": "whatsapp-image-2026-10-28-at-11-24-39-3-906ff8",
-      "titel": "No Drama",
-      "text": "",
+      "id": "whatsapp-image-2026-11-19-at-17-10-37-52b205",
+      "titel": "Warten auf das Auskriechen",
+      "text": "Ob alles aus mir so herauskriechen kann? All der Stress. Die Angst. Die Wut. Ich halte meine Ohren offen. Nur für den Fall. Der Weg ist frei. ",
       "galerie": "emotional-flow-168165",
       "bild": {
-        "pfad": "bilder/werke/whatsapp-image-2026-10-28-at-11-24-39-3-906ff8.jpg",
-        "breite": 2048,
-        "hoehe": 1536
+        "pfad": "bilder/werke/whatsapp-image-2026-11-19-at-17-10-37-52b205.jpg",
+        "breite": 1536,
+        "hoehe": 2048
       },
       "sichtbar": true,
-      "diashow": true
+      "diashow": false
     },
     {
       "id": "whatsapp-image-2026-11-06-at-09-28-41-c3b754",
@@ -243,22 +243,22 @@
       "diashow": true
     },
     {
-      "id": "whatsapp-image-2026-10-28-at-11-38-18-4-1ab2a3",
-      "titel": "Präsenz",
-      "text": "Gefühlen mit Präsenz begegnen ",
+      "id": "whatsapp-image-2026-10-28-at-11-24-39-3-906ff8",
+      "titel": "No Drama",
+      "text": "",
       "galerie": "emotional-flow-168165",
       "bild": {
-        "pfad": "bilder/werke/whatsapp-image-2026-10-28-at-11-38-18-4-1ab2a3.jpg",
+        "pfad": "bilder/werke/whatsapp-image-2026-10-28-at-11-24-39-3-906ff8.jpg",
         "breite": 2048,
         "hoehe": 1536
       },
       "sichtbar": true,
-      "diashow": false
+      "diashow": true
     },
     {
       "id": "whatsapp-image-2026-10-28-at-11-38-18-3-17d275",
-      "titel": "Shine on me creazy Diamond.",
-      "text": "",
+      "titel": "Queens",
+      "text": "And if someone cuts their finger on your crown, you are not responsible for the blood on the ground.",
       "galerie": null,
       "bild": {
         "pfad": "bilder/werke/whatsapp-image-2026-10-28-at-11-38-18-3-17d275.jpg",
@@ -353,6 +353,19 @@
       "galerie": "wolken-06edfd",
       "bild": {
         "pfad": "bilder/werke/whatsapp-image-2026-11-06-at-09-28-43-1-3e6405.jpg",
+        "breite": 2048,
+        "hoehe": 1536
+      },
+      "sichtbar": true,
+      "diashow": false
+    },
+    {
+      "id": "whatsapp-image-2026-10-28-at-11-38-18-4-1ab2a3",
+      "titel": "Präsenz",
+      "text": "Gefühlen mit Präsenz begegnen ",
+      "galerie": "emotional-flow-168165",
+      "bild": {
+        "pfad": "bilder/werke/whatsapp-image-2026-10-28-at-11-38-18-4-1ab2a3.jpg",
         "breite": 2048,
         "hoehe": 1536
       },
