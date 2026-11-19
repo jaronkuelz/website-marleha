@@ -177,9 +177,17 @@ function starteDiashow(c) {
     hinten.children[i].classList.add("aktiv");
     titel.textContent = dias[i].titel;
   }
-  zeige(0);
+  // Erstes Bild erst einblenden, wenn es geladen ist – so blitzt vorher nichts anderes auf
   const ruhig = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  if (dias.length > 1 && !ruhig) setInterval(() => zeige((i + 1) % dias.length), 7000);
+  function los() {
+    zeige(0);
+    if (dias.length > 1 && !ruhig) setInterval(() => zeige((i + 1) % dias.length), 7000);
+  }
+  const erstes = vorne.children[0];
+  if (erstes.tagName === "IMG" && !erstes.complete) {
+    erstes.addEventListener("load", los, { once: true });
+    erstes.addEventListener("error", los, { once: true });
+  } else requestAnimationFrame(los);
 }
 
 // ---------- Schwebende Bilder bei „Über mich“ ----------
